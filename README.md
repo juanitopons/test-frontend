@@ -21,6 +21,12 @@ No hay que utilizar ningún otro plugin o framework.
 - Al recargar la página el calendario debe mantener la última configuración: día, vista (semana o día) e idioma.
 
 ### Capturas
+Calendario
+![calendar](screenshots/calendar.png)
+Modal con detalles
+![modal](screenshots/details-modal.png)
+Diálogo de confirmación
+![confirm](screenshots/confirm.png)
 
 
 ### Installation
