@@ -66,6 +66,7 @@
     "@fullcalendar/list": "^5.0.0",
     "@fullcalendar/timegrid": "^5.0.0",
     "bootstrap": "^4.5.0",
-    "core-js": "^3.6.5"
+    "core-js": "^3.6.5",
+    "moment": "^2.27.0"
   }
 }
