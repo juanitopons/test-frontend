@@ -13,8 +13,9 @@
       "modules": true
     }
   },
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "html"],
   "rules": {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "no-unused-vars": "warn"
   }
 }
