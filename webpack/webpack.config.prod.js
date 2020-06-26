@@ -29,6 +29,17 @@ module.exports = merge(common, {
         use: 'babel-loader',
       },
       {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: true,
+            },
+          },
+        ],
+      },
+      {
         test: /\.s?css/i,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader'],
       },
