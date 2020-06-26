@@ -1,0 +1,14 @@
+event-modal {
+  .visible {
+    visibility: visible;
+    display: block !important;
+  }
+
+  .modal-dialog-centered {
+    justify-content: center;
+  }
+
+  .modal-content {
+    max-width: 500px;
+  }
+}

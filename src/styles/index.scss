@@ -1,3 +1,32 @@
+$primary: #19252E;
+
+@import "bootstrap";
+
 body {
-  padding: 1rem;
+  font-family: "Roboto",sans-serif;
+  font-weight: 300;
+
+  .container-fluid {
+    margin-top: .4rem;
+    
+    section {
+      display: block;
+    }
+
+    select {
+      padding: .3rem;
+      margin: 1rem 0;
+      width: 100%;
+    }
+  }
+
+  #calendar {
+    .fc-scroller {
+      overflow: auto !important;
+    }
+  }
+}
+
+button {
+  outline: none !important;
 }

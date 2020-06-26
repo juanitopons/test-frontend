@@ -1,0 +1,15 @@
+{
+  "ID": "ID",
+  "START": "Inicio",
+  "END": "Fin",
+  "COLOR": "Color",
+  "TITLE": "Título",
+  "DESC": "Descripcion",
+  "CLOSE": "Cerrar",
+  "EVENT_DETAIL": "Detalles Evento",
+  "ARE_YOU_SURE": "¿Estás seguro?",
+  "CONFIRM": "Aceptar",
+  "CANCEL": "Cancelar",
+  "ES": "Español",
+  "EN": "Inglés"
+}
