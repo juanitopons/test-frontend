@@ -45,3 +45,10 @@ export const isWeekend = (date) => {
   const theDate = new Date(date);
   return theDate.getDay() == 6 || theDate.getDay() == 0;
 };
+
+export const isSameDate = (date1, date2) => {
+  const theDate1 = new Date(date1).setHours(0, 0, 0, 0);
+  const theDate2 = new Date(date2).setHours(0, 0, 0, 0);
+
+  return theDate1 === theDate2;
+};

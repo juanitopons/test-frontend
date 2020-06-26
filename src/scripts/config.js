@@ -4,7 +4,13 @@ import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 import bootstrapPlugin from '@fullcalendar/bootstrap';
 
-import { getStorage, getInitialDate, setStorage, isWeekend } from './utils';
+import {
+  getStorage,
+  getInitialDate,
+  setStorage,
+  isWeekend,
+  isSameDate,
+} from './utils';
 import { eventClickModal, eventDropModal } from './actions';
 import components from '../components';
 
@@ -62,7 +68,10 @@ export const CalendarConfig = (lang) => {
       setStorage(STORAGE_DATA.LAST_VIEW, dateInfo.view.type);
     },
     eventDrop: (info) => {
-      if (isWeekend(info.event.start)) {
+      if (
+        isWeekend(info.event.start) &&
+        !isSameDate(info.event.start, info.oldEvent.start)
+      ) {
         eventDropModal(info, components.ConfirmModal.NAME);
       }
     },
